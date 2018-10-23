@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "FuckTheAD",
+  "version": "0.0.1",
+  "description": "去广告的扩展",
+  "icons":{
+    "16": "img/go.jpeg",
+    "48": "img/go.jpeg",
+    "128": "img/go.jpeg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://shimo.im/*"],
+      "js": ["js/shimo.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
